@@ -1,6 +1,6 @@
 ctrl = {} //controlador de rutas respecto a usuario
 
-const METRICSPROJECT = require("../models/ProjectMetric")
+const ProjectMetric = require("../models/ProjectMetric")
 const ProjectRegister = require("../models/ProjectRegister")
 
 let variables = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
@@ -17,7 +17,7 @@ ctrl.metrics = async (req, res) => {
         }
         if (Object.keys(data).length > 0) {
             console.log(data)
-            let newMetric = new METRICSPROJECT(data)
+            let newMetric = new ProjectMetric(data)
             await newMetric.save()
         }
         res.status(200).json('oka')
