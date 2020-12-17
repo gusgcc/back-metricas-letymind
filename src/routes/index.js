@@ -2,9 +2,9 @@
 const express = require("express")
 const router = express.Router();
 
-const metrics = require("../controllers/metricsController")
-const Project = require("../controllers/projectController")
-const Soft = require("../controllers/softController")
+const metrics = require("../controllers/metricsController.js")
+const Project = require("../controllers/projectController.js")
+const Soft = require("../controllers/softController.js")
 //las rutas de nuestro aplicacion web
 module.exports = app => {
     //metrics

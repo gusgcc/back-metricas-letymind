@@ -1,7 +1,7 @@
 ctrl = {} //controlador de rutas respecto a usuario
 
-const SoftMetric = require("../models/SoftMetric")
-const SoftRegister = require("../models/SoftRegister")
+const SoftMetric = require("../models/SoftMetric.js")
+const SoftRegister = require("../models/SoftRegister.js")
 
 let variables = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
 
