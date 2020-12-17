@@ -16,6 +16,7 @@ var SoftMetricSchema = new Schema({
     utm_medium: String,
     utm_campaign: String,
     utm_content: String,
+
     utm_term: String
 })
 const SoftMetric = model("SoftMetric", SoftMetricSchema) //se creo el modelo SoftMetric
